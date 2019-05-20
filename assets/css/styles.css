@@ -4,11 +4,31 @@ html, body {
   height: 100%;
   min-width: 600px; }
 
+.no-focus-outline a:focus, .no-focus-outline button:focus {
+  outline: none; }
+
+.image-circular {
+  background-color: #222;
+  border-radius: 50%;
+  height: 384px;
+  overflow: hidden;
+  position: relative;
+  width: 384px; }
+
+.image-circular img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto; }
+
 a {
   color: #40b86e; }
 
+a:hover, nav a:hover {
+  color: #00ff62;
+  text-decoration: none; }
+
 #content {
-  background-color: #000323;
   flex: 1 0 auto;
   min-height: 750px; }
 
@@ -16,66 +36,38 @@ footer {
   background-color: #000;
   flex-shrink: none; }
 
-.container-fluid {
-  /*overflow: hidden;*/ }
-
-.text-light {
-  /*color: #ed0000 !important;*/ }
-
-.disabled {
-  color: #4d4e66 !important; }
-
 nav {
   background-color: #111; }
 
-.navbar {
-  padding: 2%; }
-
 .navbar-brand {
   font-family: 'Roboto', sans-serif;
-  font-size: 2em; }
+  font-size: 2em;
+  font-weight: 300; }
+
+.logo-diamond {
+  color: #40b86e; }
 
 #selected {
   color: #40b86e !important; }
 
-#portfolio-placeholder {
-  text-align: center; }
-
-.work-container {
-  min-width: 256px;
-  min-height: 256px;
-  max-width: 512px;
-  max-height: 512px; }
-
-.work-container img {
-  width: 100%;
-  height: auto; }
-
-.work-1 {
-  background-color: #060926; }
-
-.work-2 {
-  background-color: #0e1130; }
-
-.work-3 {
-  background-color: #161832; }
-
-.work-4 {
-  background-color: #0f1129; }
-
 .page {
-  background-color: #070707;
   min-height: 750px; }
+
+.contact-form-container {
+  min-width: 450px; }
 
 .contact-form {
   border: 1px solid #191919;
   padding: 10%;
   text-align: center; }
 
-.btn {
+.btn, .btn:hover, .btn:focus {
   background-color: #40b86e !important;
-  color: #070707;
-  border-color: #000; }
+  border-color: #000 !important;
+  color: #070707 !important; }
 
-.contact-form-container {
-  min-width: 450px; }
+.btn:hover {
+  background-color: #32ec79 !important; }
+
+.btn:active {
+  background-color: #227a44 !important; }
