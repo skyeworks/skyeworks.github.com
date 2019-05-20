@@ -32,9 +32,8 @@ nav {
   padding: 2%; }
 
 .navbar-brand {
-  font-family: 'Lato', sans-serif;
-  font-size: 2em;
-  font-weight: bold; }
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em; }
 
 #selected {
   color: #40b86e !important; }
